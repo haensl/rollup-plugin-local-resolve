@@ -1,3 +1,6 @@
+## 1.0.4
+* Fix a bug that causes resolving conflicts with other plugins.
+
 ## 1.0.3
 * Use latest node version when releasing.
 

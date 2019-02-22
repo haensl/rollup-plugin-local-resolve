@@ -4,7 +4,8 @@ const path = require('path');
 const resolve = () => ({
   name: '@haensl/rollup-plugin-local-resolve',
   resolveId: (importee, importer) => {
-    if (path.isAbsolute(importee)) {
+    if (path.isAbsolute(importee)
+      || path.basename(importee) === importee) {
       return Promise.resolve(null);
     }
 
