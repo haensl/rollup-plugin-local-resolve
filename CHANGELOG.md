@@ -1,3 +1,6 @@
+## 1.0.3
+* Use latest node version when releasing.
+
 ## 1.0.2
 * Skip cleaning up build artefacts at Travis.
 

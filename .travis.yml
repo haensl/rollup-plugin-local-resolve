@@ -16,6 +16,7 @@ jobs:
     - stage: test
       script: npm test
     - stage: deploy
+      node_js: "node"
       deploy:
         provider: npm
         api_key: $NPM_API_KEY
