@@ -4,7 +4,11 @@
 [![npm version](https://badge.fury.io/js/@haensl%2Frollup-plugin-local-resolve.svg)](http://badge.fury.io/js/@haensl%2Frollup-plugin-local-resolve)
 [![Build Status](https://travis-ci.org/haensl/rollup-plugin-local-resolve.svg?branch=master)](https://travis-ci.org/haensl/rollup-plugin-local-resolve)
 
-Rollup plugin to resolve relative imports from local folders without stating the index file. E.g. `import something from '../some-dir'.`
+Rollup plugin to resolve relative imports from local folders without stating the index file. E.g.
+
+```javascript
+import something from '../some-dir'.
+```
 
 ## Quick start
 
