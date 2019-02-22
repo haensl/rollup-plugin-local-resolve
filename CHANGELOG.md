@@ -1,3 +1,6 @@
+## 1.0.2
+* Skip cleaning up build artefacts at Travis.
+
 ## 1.0.1
 * Add prepare step before publishing.
 
