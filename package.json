@@ -1,13 +1,13 @@
 {
   "name": "@haensl/rollup-plugin-local-resolve",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Rollup plugin to resolve relative imports from local folders without stating the index file",
   "main": "dist/rollup-plugin-local-resolve.cjs.js",
   "module": "dist/rollup-plugin-local-resolve.es.js",
   "scripts": {
     "build": "rollup -c",
     "lint": "eslint -c .eslintrc.json src/**/*.js",
-    "prepublishOnly": "npm run build",
+    "prepare": "npm run build",
     "tdd": "mocha --watch",
     "test": "mocha"
   },
