@@ -37,6 +37,11 @@ export default {
 }
 ```
 
+## Credits
+
+* Functionality inspired by Johannes Stein's [rollup-plugin-local-resolve](https://github.com/frostney/rollup-plugin-local-resolve)
+* Unit tests inspired by rollup's own [rollup-plugin-node-resolve](https://github.com/rollup/rollup-plugin-node-resolve)
+
 ## [Changelog](CHANGELOG.md)
 
 ## [License](LICENSE)
