@@ -1,3 +1,6 @@
+## 1.0.6
+* [#3: Update dependencies.](https://github.com/haensl/rollup-plugin-local-resolve/issues/3)
+
 ## 1.0.5
 * Fix a bug that causes resolving conflicts with other plugins.
 
