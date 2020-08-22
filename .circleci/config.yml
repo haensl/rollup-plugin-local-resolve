@@ -213,8 +213,7 @@ jobs:
           command: |
             npm test
       - store_test_results:
-          working_directory: /tmp/test-app
-          path: build
+          path: /tmp/test-app/build
 
   ensure-versioned-correctly:
     docker:
@@ -286,8 +285,7 @@ jobs:
           command: |
             npm test
       - store_test_results:
-          working_directory: /tmp/test-app
-          path: build
+          path: /tmp/test-app/build
       - package-information
 
   publish-github-release:
