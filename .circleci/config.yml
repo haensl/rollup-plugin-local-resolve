@@ -192,7 +192,7 @@ jobs:
           name: copy package test
           working_directory: /tmp/test-app
           command: |
-            cp ~/rollup-plugin-local-resolve/src/package-test/* ./
+            cp -r ~/rollup-plugin-local-resolve/src/package-test/* ./
       - restore_cache:
           working_directory: /tmp/test-app
           keys:
@@ -279,7 +279,7 @@ jobs:
           name: copy package test
           working_directory: /tmp/test-app
           command: |
-            cp ~/rollup-plugin-local-resolve/src/package-test/* .
+            cp -r ~/rollup-plugin-local-resolve/src/package-test/* .
       - run:
           name: test bundling
           working_directory: /tmp/test-app
