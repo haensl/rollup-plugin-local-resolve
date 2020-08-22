@@ -7,7 +7,7 @@
   "scripts": {
     "build": "rollup -c",
     "lint": "eslint -c .eslintrc.json src/**/*.js",
-    "lint:ci": "eslint -c .eslintrc.json --format junit -o test-results/eslint/results.xml lib/**/*.js",
+    "lint:ci": "eslint -c .eslintrc.json --format junit -o test-results/eslint/results.xml src/**/*.js",
     "prepare": "npm run build",
     "tdd": "mocha --watch",
     "test": "mocha",
