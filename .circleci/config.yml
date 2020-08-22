@@ -67,8 +67,8 @@ commands:
           working-directory: /tmp
           name: create test application
           command: |
-            mkdir << parameters.project_name >>
-            cd << parameters.project_name >> && npm init -y && npm i -D rollup && sed -i 's/"echo.*"/"rollup -c"/g' package.json && echo "Created package.json" && cat package.json
+            mkdir /tmp/<< parameters.project_name >>
+            cd /tmp/<< parameters.project_name >> && npm init -y && npm i -D rollup && sed -i 's/"echo.*"/"rollup -c"/g' package.json && echo "Created package.json" && cat package.json
 
   package-information:
     steps:
