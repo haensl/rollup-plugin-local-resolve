@@ -1,3 +1,6 @@
+## 1.1.1
+* Fix Github release artefact file name.
+
 ## 1.1.0
 * [#11: Migrate to CircleCI.](https://github.com/haensl/rollup-plugin-local-resolve/issues/11)
 
