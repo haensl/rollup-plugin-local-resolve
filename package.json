@@ -8,7 +8,6 @@
     "build": "rollup -c",
     "lint": "eslint -c .eslintrc.json src/**/*.js",
     "lint:ci": "eslint -c .eslintrc.json --format junit -o test-results/eslint/results.xml src/**/*.js",
-    "prepare": "npm run build",
     "tdd": "mocha --watch",
     "test": "mocha",
     "test:ci": "mocha --recursive --reporter mocha-junit-reporter --reporter-options mochaFile=./test-results/mocha/results.xml \"./{,!(node_modules)/**/}*.test.js\""
