@@ -46,14 +46,14 @@ commands:
     steps:
       - checkout
       - restore_cache:
-          keys: rollup-plugin-local-resolve-dependencies-{{ checksum "package.json" }}
+          keys: rollup-plugin-local-resolve-dependencies-{{ checksum "package-lock.json" }}
       - run:
           name: install dependencies
           command: npm i
       - save_cache:
           paths:
             - node_modules
-          key: rollup-plugin-local-resolve-dependencies-{{ checksum "package.json" }}
+          key: rollup-plugin-local-resolve-dependencies-{{ checksum "package-lock.json" }}
       - extract-versions
 
   create-test-project:
