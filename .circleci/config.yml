@@ -68,7 +68,7 @@ commands:
           name: create test application
           command: |
             mkdir << parameters.project_name >>
-            cd << parameters.project_name >> && npm init -y && npm i -D rollup && sed -i '/"echo.*"/"rollup -c"' && echo "Created" << parameters.pjoject_name >> "with package.json" && cat package.json
+            cd << parameters.project_name >> && npm init -y && npm i -D rollup && sed -i '/"echo.*"/"rollup -c"/g' package.json && echo "Created package.json" && cat package.json
 
   package-information:
     steps:
