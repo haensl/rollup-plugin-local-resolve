@@ -212,7 +212,7 @@ jobs:
           working_directory: /tmp/test-app
           command: |
             npm test
-      - store_test_results:
+      - store_artifacts:
           path: /tmp/test-app/build
 
   ensure-versioned-correctly:
@@ -284,7 +284,7 @@ jobs:
           working_directory: /tmp/test-app
           command: |
             npm test
-      - store_test_results:
+      - store_artifacts:
           path: /tmp/test-app/build
       - package-information
 
