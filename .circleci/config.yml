@@ -68,7 +68,8 @@ commands:
           name: create test application
           command: |
             mkdir << parameters.project_name >>
-            cd << parameters.project_name >> && npm init -y && npm i -g rollup
+            cd << parameters.project_name >> && npm init -y
+            npm i -g rollup
 
   package-information:
     steps:
