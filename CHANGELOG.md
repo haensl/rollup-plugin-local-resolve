@@ -1,3 +1,6 @@
+## 1.1.0
+* [#11: Migrate to CircleCI.](https://github.com/haensl/rollup-plugin-local-resolve/issues/11)
+
 ## 1.0.8
 * [#9: Update dependencies.](https://github.com/haensl/rollup-plugin-local-resolve/issues/9)
 
