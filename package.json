@@ -1,6 +1,6 @@
 {
   "name": "@haensl/rollup-plugin-local-resolve",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "Rollup plugin to resolve relative imports from local folders without stating the index file",
   "main": "dist/rollup-plugin-local-resolve.cjs.js",
   "module": "dist/rollup-plugin-local-resolve.es.js",
@@ -8,15 +8,10 @@
     "build": "rollup -c",
     "lint": "eslint -c .eslintrc.json src/**/*.js",
     "lint:ci": "eslint -c .eslintrc.json --format junit -o test-results/eslint/results.xml src/**/*.js",
+    "prepare": "if [ ${NODE_ENV} != 'production' ]; then husky install; fi",
     "tdd": "mocha --watch",
     "test": "mocha",
     "test:ci": "mocha --recursive --reporter mocha-junit-reporter --reporter-options mochaFile=./test-results/mocha/results.xml \"./{,!(node_modules)/**/}*.test.js\""
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint && npm test",
-      "pre-push": "npm run lint && npm test"
-    }
   },
   "engines": {
     "node": ">=6"
@@ -55,7 +50,7 @@
     "@rollup/plugin-commonjs": "^21.0.1",
     "chai": "^4.2.0",
     "eslint": "^8.5.0",
-    "husky": "^4.2.5",
+    "husky": "^7.0.4",
     "mocha": "^9.0.3",
     "mocha-junit-reporter": "^2.0.0",
     "rollup": "^2.26.5",
