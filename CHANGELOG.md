@@ -1,3 +1,6 @@
+## 1.1.8
+* [#25: Update dependencies..](https://github.com/haensl/rollup-plugin-local-resolve/issues/25)
+
 ## 1.1.7
 * [#23: Add funding information.](https://github.com/haensl/rollup-plugin-local-resolve/issues/23)
 * Update dependencies.
