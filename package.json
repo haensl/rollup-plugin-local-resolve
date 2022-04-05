@@ -1,6 +1,6 @@
 {
   "name": "@haensl/rollup-plugin-local-resolve",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "description": "Rollup plugin to resolve relative imports from local folders without stating the index file",
   "main": "dist/rollup-plugin-local-resolve.cjs.js",
   "module": "dist/rollup-plugin-local-resolve.es.js",
