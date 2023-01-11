@@ -1,3 +1,6 @@
+## 1.1.9
+* [#27: Update dependencies..](https://github.com/haensl/rollup-plugin-local-resolve/issues/27)
+
 ## 1.1.8
 * [#25: Update dependencies..](https://github.com/haensl/rollup-plugin-local-resolve/issues/25)
 
