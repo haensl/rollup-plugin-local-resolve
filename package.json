@@ -1,6 +1,6 @@
 {
   "name": "@haensl/rollup-plugin-local-resolve",
-  "version": "1.1.8",
+  "version": "1.1.9",
   "description": "Rollup plugin to resolve relative imports from local folders without stating the index file",
   "main": "dist/rollup-plugin-local-resolve.cjs.js",
   "module": "dist/rollup-plugin-local-resolve.es.js",
@@ -48,13 +48,13 @@
   "homepage": "https://github.com/haensl/rollup-plugin-local-resolve#readme",
   "devDependencies": {
     "@haensl/eslint-config": "^1.3.0",
-    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-commonjs": "^24.0.0",
     "chai": "^4.2.0",
     "eslint": "^8.5.0",
-    "husky": "^7.0.4",
-    "mocha": "^9.0.3",
+    "husky": "^8.0.3",
+    "mocha": "^10.2.0",
     "mocha-junit-reporter": "^2.0.0",
-    "rollup": "^2.26.5",
+    "rollup": "^3.9.1",
     "rollup-plugin-buble": "^0.19.8"
   }
 }

@@ -1,6 +1,6 @@
-import buble from 'rollup-plugin-buble';
+const buble = require('rollup-plugin-buble');
 
-export default {
+module.exports = {
   input: 'src/index.js',
   plugins: [
     buble()
