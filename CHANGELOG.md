@@ -1,11 +1,14 @@
+## 1.1.11
+* [#32: Update dependencies.](https://github.com/haensl/rollup-plugin-local-resolve/issues/32)
+
 ## 1.1.10
-* [#29: Update dependencies..](https://github.com/haensl/rollup-plugin-local-resolve/issues/29)
+* [#29: Update dependencies.](https://github.com/haensl/rollup-plugin-local-resolve/issues/29)
 
 ## 1.1.9
-* [#27: Update dependencies..](https://github.com/haensl/rollup-plugin-local-resolve/issues/27)
+* [#27: Update dependencies.](https://github.com/haensl/rollup-plugin-local-resolve/issues/27)
 
 ## 1.1.8
-* [#25: Update dependencies..](https://github.com/haensl/rollup-plugin-local-resolve/issues/25)
+* [#25: Update dependencies.](https://github.com/haensl/rollup-plugin-local-resolve/issues/25)
 
 ## 1.1.7
 * [#23: Add funding information.](https://github.com/haensl/rollup-plugin-local-resolve/issues/23)
