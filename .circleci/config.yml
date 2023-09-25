@@ -46,7 +46,8 @@ commands:
     steps:
       - checkout
       - restore_cache:
-          keys: rollup-plugin-local-resolve-dependencies-{{ checksum "package-lock.json" }}
+          keys:
+            - rollup-plugin-local-resolve-dependencies-{{ checksum "package-lock.json" }}
       - run:
           name: install dependencies
           command: npm i
@@ -69,19 +70,6 @@ commands:
           command: |
             mkdir /tmp/<< parameters.project_name >>
             cd /tmp/<< parameters.project_name >> && npm init -y && npm i -D rollup && sed -i 's/"echo.*"/"rollup -c"/g' package.json && echo "Created package.json" && cat package.json
-
-  package-information:
-    steps:
-      - run:
-          name: install tree
-          command: sudo apt-get -y install tree
-      - run:
-          name: gather bundle information
-          command: |
-            npm info @haensl/rollup-plugin-local-resolve@${VERSION} > ./bundle.info
-            tree -s node_modules/@haensl/rollup-plugin-local-resolve >> ./bundle.info
-      - store_artifacts:
-          path: bundle.info
 
 workflows:
   version: 2
@@ -117,7 +105,7 @@ workflows:
 jobs:
   lint:
     docker:
-      - image: circleci/node:lts
+      - image: cimg/node:lts
     working_directory: ~/rollup-plugin-local-resolve
     steps:
       - init
@@ -133,7 +121,7 @@ jobs:
 
   test:
     docker:
-      - image: circleci/node:lts
+      - image: cimg/node:lts
     working_directory: ~/rollup-plugin-local-resolve
     steps:
       - init
@@ -146,7 +134,7 @@ jobs:
 
   bundle:
     docker:
-      - image: circleci/node:lts
+      - image: cimg/node:lts
     working_directory: ~/rollup-plugin-local-resolve
     steps:
       - init
@@ -181,7 +169,7 @@ jobs:
 
   bundle-test:
     docker:
-      - image: circleci/node:lts
+      - image: cimg/node:lts
     steps:
       - init
       - attach_workspace:
@@ -217,7 +205,7 @@ jobs:
 
   ensure-versioned-correctly:
     docker:
-      - image: circleci/node:lts
+      - image: cimg/node:lts
     working_directory: ~/rollup-plugin-local-resolve
     steps:
       - init
@@ -248,7 +236,7 @@ jobs:
 
   publish:
     docker:
-      - image: circleci/node:lts
+      - image: cimg/node:lts
     working_directory: ~/rollup-plugin-local-resolve
     steps:
       - init
@@ -263,7 +251,7 @@ jobs:
 
   package-test:
     docker:
-      - image: circleci/node:lts
+      - image: cimg/node:lts
     steps:
       - init
       - attach_workspace:
@@ -286,7 +274,6 @@ jobs:
             npm test
       - store_artifacts:
           path: /tmp/test-app/build
-      - package-information
 
   publish-github-release:
     docker:
