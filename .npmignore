@@ -1,4 +1,5 @@
 .*
 *.md
 test/
+src/
 *.config.js
